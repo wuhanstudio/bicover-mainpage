@@ -8,18 +8,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="vendors/css/normalize.css">
-    <link rel="stylesheet" href="vendors/css/ionicons.min.css">
-    <link rel="stylesheet" href="vendors/css/grid.css">
-    <link rel="stylesheet" href="vendors/css/animate.css">
-    <link rel="stylesheet" href="resources/css/style.css">
-    <link rel="stylesheet" href="resources/css/queries.css">
+    <!-- Font Style -->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet" type="text/css">
+
+    <!-- Ionicons -->
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <!-- Full Page Scroll -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css"/>
 
     <!-- Magnific Popup core CSS file -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <!-- Grid -->
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/queries.css">
+
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -35,17 +52,17 @@
         <nav>
             <div class="row">
                 <a href="#main">
-                    <img src="resources/img/logo.png " class="logo-black" alt="Focus Logo">
+                    <img data-src="http://bicover-cc.oss-us-west-1.aliyuncs.com/logo.png " class="logo-black lozad" alt="Bicover Logo">
                 </a>
                 <ul class="main-nav js-main-nav">
                     <li>
                         <a href="#intro">Introduction</a>
                     </li>
                     <li>
-                        <a href="#features">Monitoring</a>
+                        <a href="#monitor">Monitoring</a>
                     </li>
                     <li>
-                        <a href="#principle">How it works</a>
+                        <a href="#components">How it works</a>
                     </li>
                     <li>
                         <a href="#team">Team Members</a>
@@ -53,7 +70,7 @@
                     <li>
                         <a href="#achieve">Achievements</a>
                     </li>
-                </ul>
+              `  </ul>
                 <a class="mobile-nav-icon js-nav-icon">
                     <i class="ion-navicon-round"></i>
                 </a>
@@ -62,17 +79,18 @@
         <div class="hero-text-box">
             <h1> Bicover
                 <br> A Smart Liquid Cooling Garment </h1>
-            <a href="#" class="btn btn-full  js-scroll-to-start">Introduction</a>
-            <a href="#" class="btn btn-ghost js-scroll-to-plans">Components</a>
+            <a href="#" class="btn btn-full  js-scroll-to-intro">Introduction</a>
+            <a href="#" class="btn btn-ghost js-scroll-to-comp">Components</a>
         </div>
     </header>
-    <section class="section-features js-section-purpose" id="intro">
+    
+    <section class="section-intro js-section-intro" id="intro">
         <div class="row">
             <h2>Introduction</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-2 steps-box">
-                <img src="resources/img/whole-machine.png" alt="Bicover Suit" class="app-screen js-wp-2">
+                <img data-src="http://bicover-cc.oss-us-west-1.aliyuncs.com/whole-machine.png" alt="Bicover Suit" class="app-screen js-wp-2 lozad">
             </div>
             <div class="col span-1-of-2 steps-box">
                 <div class="works-step">
@@ -98,72 +116,64 @@
         </div>
     </section>
 
-    <section class="section-purpose js-section-plans" id="features">
+    <section class="section-monitor js-section-plans" id="monitor">
         <div class="row">
             <h2>Realtime Monitor System</h2>
-            <img src="resources/img/monitor.png" alt="monitor">
+            <img data-src="http://bicover-cc.oss-us-west-1.aliyuncs.com/monitor.png" class="lozad" alt="monitor">
         </div>
     </section>
 
-    <section class="section-principle js-section-components" id="principle">
+    <section class="section-principle js-section-components" id="components">
         <div class="row">
             <h2>How it works</h2>
         </div>
         <div class="row js-wp-3">
             <div class="col span-1-of-4 box">
                 <div>
-                    <img src="resources/img/circulate.png" alt="3D Printing">
+                    <img data-src="http://bicover-cc.oss-us-west-1.aliyuncs.com/circulate.png" class="lozad" alt="Water Circulation">
                 </div>
                 <h3>Water Circulation</h3>
-                <div class="city-feature">
+                <div class="bicover-feature">
                     <i class="ion-checkmark icon-small"></i>
                     Cooling Water Circulation
                 </div>
-                <div class="city-feature">
+                <div class="bicover-feature">
                     <i class="ion-checkmark icon-small"></i>
                     Exterior Heat Insulation
                 </div>
-                <!-- <div class="city-feature">
-                    <i class="ion-checkmark icon-small"></i>
-                    <a href="#">@omnifood_lx</a>
-                </div> -->
             </div>
             <div class="col span-1-of-4 box">
-                <img src="resources/img/micropump.png" alt="Automatic Tool Switch">
+                <img data-src="http://bicover-cc.oss-us-west-1.aliyuncs.com/micropump.png" alt="Micropump" class="lozad">
                 <h3>Micropump</h3>
-                <div class="city-feature">
+                <div class="bicover-feature">
                     <i class="ion-checkmark icon-small"></i>
                     Self-developed
                 </div>
-                <div class="city-feature">
+                <div class="bicover-feature">
                     <i class="ion-checkmark icon-small"></i>
                     Hydraulic Suspension
                 </div>
-                <!-- <div class="city-feature">
-                    <i class="ion-checkmark icon-small"></i>
-                    Start Milling
-                </div> -->
             </div>
             <div class="col span-1-of-4 box">
-                <img src="resources/img/mcu.png" alt="Five Axis Milling">
+                <img data-src="http://bicover-cc.oss-us-west-1.aliyuncs.com/mcu.png" alt="MCU" class="lozad">
                 <h3>Circuits</h3>
-                <div class="city-feature">
+                <div class="bicover-feature">
                     <i class="ion-checkmark icon-small"></i>
                     PWM Control
                 </div>
-                <div class="city-feature">
+                <div class="bicover-feature">
                     <i class="ion-checkmark icon-small"></i>
                     MPU6050 Gyro Accelerometer
                 </div>
             </div>
             <div class="col span-1-of-4 box">
-                <img src="resources/img/app.png" alt="Bicover App">
+                <img data-src="http://bicover-cc.oss-us-west-1.aliyuncs.com/app.png" alt="Bicover App" class="lozad">
                 <h3>Android App</h3>
-                <div class="city-feature">
+                <div class="bicover-feature">
                     <i class="ion-checkmark icon-small"></i>
                     Realtime Monitoring
                 </div>
-                <div class="city-feature">
+                <div class="bicover-feature">
                     <i class="ion-checkmark icon-small"></i>
                     BLE 4.0 Protocol
                 </div>
@@ -176,51 +186,12 @@
             <h2>Bicover Team</h2>
         </div>
         <ul class="meals-showcase clearfix">
-            <!-- <li>
-                <figure class="meals-photos">
-                    <img src="http://wuhanstudio-cc.oss-us-west-1.aliyuncs.com/hongshu.jpg" alt="Hong Shu">
-                </figure>
-            </li> -->
             <li>
                 <figure class="meals-photos">
-                    <img src="resources/img/team.png" alt="TPL Bicover Team">
+                    <img data-src="http://bicover-cc.oss-us-west-1.aliyuncs.com/team.png" alt="TPL Bicover Team" class="lozad">
                 </figure>
             </li>
-            <!-- <li>
-                <figure class="meals-photos">
-                    <img src="http://wuhanstudio-cc.oss-us-west-1.aliyuncs.com/testing.jpg" alt="Preparing for Competetion">
-                </figure>
-            </li> -->
-            <!-- <li>
-                <figure class="meals-photos">
-                    <img src="http://wuhanstudio-cc.oss-us-west-1.aliyuncs.com/canpei.png" alt="Canpei In the Box">
-                </figure>
-            </li>  -->
         </ul>
-
-        <!-- <ul class="meals-showcase clearfix">
-            <li>
-                <figure class="meals-photos">
-                    <img src="http://wuhanstudio-cc.oss-us-west-1.aliyuncs.com/team.JPG" alt="Team">
-                </figure>
-            </li>
-            <li>
-                <figure class="meals-photos">
-                    <img src="http://wuhanstudio-cc.oss-us-west-1.aliyuncs.com/assembly.jpg" alt="Assembling">
-                </figure>
-            </li>
-            <li>
-                <figure class="meals-photos">
-                    <img src="http://wuhanstudio-cc.oss-us-west-1.aliyuncs.com/machine.jpg" alt="Machine">
-                </figure>
-            </li>
-
-            <li>
-                <figure class="meals-photos">
-                    <img src="http://wuhanstudio-cc.oss-us-west-1.aliyuncs.com/national.jpg" alt="Special Honor">
-                </figure>
-            </li>
-        </ul> -->
     </section>
 
     <section class="section-achieve" id="achieve">
@@ -228,33 +199,23 @@
             <h2>A Start-Up Company Coming Soon</h2>
         </div>
         <div class="row">
-            <!-- <div class="col span-1-of-3">
-                <div class="plan-box js-wp-4">
-                    <div>
-                        <h3>Cooperations</h3>
-                    </div>
-                    <div class="coop">
-                        <img src="resources/img/cooperations.png" alt="cooperqations">
-                    </div>
-                </div>
-            </div> -->
             <div class="col span-1-of-2">
-                <div class="plan-box">
+                <div class="achieve-box">
                     <div>
                         <h3>Patents</h3>
                     </div>
                     <div class="patents">
-                        <img src="resources/img/patents.png" alt="patents">
+                        <img data-src="http://bicover-cc.oss-us-west-1.aliyuncs.com/patents.png" alt="patents" class="lozad">
                     </div>
                 </div>
             </div>
             <div class="col span-1-of-2">
-                <div class="plan-box">
+                <div class="achieve-box">
                     <div>
                         <h3>Paper</h3>
                     </div>
                     <div class="paper">
-                        <img src="resources/img/paper.png" alt="">
+                        <img data-src="http://bicover-cc.oss-us-west-1.aliyuncs.com/paper.png" alt="paper" class="lozad">
                     </div>
                 </div>
             </div>
@@ -263,33 +224,33 @@
 
     <footer>
         <div class="row footer">
-            <div class="col span-1-of-3">
+            <div class="col span-1-of-2">
                 <a href="http://english.hust.edu.cn/">
-                    <img class="hust lozad" src="http://cdn.wuhanstudio.cc/hust.png" alt="Huazhong Univercity of Science and Technology">
+                    <img class="hust lozad" data-src="http://cdn.wuhanstudio.cc/hust.png" alt="Huazhong Univercity of Science and Technology">
                 </a>
             </div>
-            <div class="col span-1-of-3">
-                <div class="back-box">
-                    <a href="#mainPage">Click Me</a>
-                    <div class="arrow-reverse arrow-reverse-first"></div>
-                    <div class="arrow-reverse arrow-reverse-second"></div>
-                </div>
-            </div>
-            <div class="col span-1-of-3">
+            <div class="col span-1-of-2">
                 <a href="http://tpl.energy.hust.edu.cn/English1.htm">
-                    <img class="tpl lozad" src="http://cdn.wuhanstudio.cc/tpl.png" alt="Thermal Packaging Laboratory">
+                    <img class="tpl lozad" data-src="http://cdn.wuhanstudio.cc/tpl.png" alt="Thermal Packaging Laboratory">
                 </a>
             </div>
         </div>
-
     </footer>
 
-    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
-    <script src="vendors/js/jquery.waypoints.min.js"></script>
-    <script src="resources/js/script.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+
+    <!-- Waypoint -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 
     <!-- Magnific Popup core JS file -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <!-- Lazy Load -->
+    <script src="https://cdn.jsdelivr.net/npm/lozad"></script>
+
+    <!-- My Script-->
+    <script src="resources/js/script.js"></script>
 
 </body>
 

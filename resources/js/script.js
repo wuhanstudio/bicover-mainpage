@@ -1,18 +1,28 @@
 
 $(document).ready(function () {
 
-    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-		disableOn: 700,
-		type: 'iframe',
-		mainClass: 'mfp-fade',
-		removalDelay: 160,
-		preloader: false,
+    // Lazy Load library
+    lozad('.lozad', {
+        load: function (el) {
+            el.src = el.dataset.src;
+            el.onload = function () {
+                el.classList.add('fade')
+            }
+        }
+    }).observe()
 
-		fixedContentPos: false
-	});
+    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+
+        fixedContentPos: false
+    });
 
     // For the sticky navigation
-    $('.js-section-purpose').waypoint(function (direction) {
+    $('.js-section-intro').waypoint(function (direction) {
         if (direction == 'down') {
             $('nav').addClass('sticky');
         }
@@ -23,11 +33,11 @@ $(document).ready(function () {
     );
 
     // Scroll on buttons
-    $('.js-scroll-to-start').click(function () {
-        $('html, body').animate({ scrollTop: $('.js-section-purpose').offset().top }, 1000);
+    $('.js-scroll-to-intro').click(function () {
+        $('html, body').animate({ scrollTop: $('.js-section-intro').offset().top }, 1000);
     });
-    
-    $('.js-scroll-to-plans').click(function () {
+
+    $('.js-scroll-to-comp').click(function () {
         $('html, body').animate({ scrollTop: $('.js-section-components').offset().top }, 1000);
     });
 

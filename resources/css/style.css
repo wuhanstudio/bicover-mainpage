@@ -310,23 +310,23 @@ header {
 
 /* ------------------------- */
 
-/* Why We need it */
+/* Monitor*/
 
 /* ------------------------- */
 
-.section-purpose{
+.section-monitor{
     background-color:#FDFDFD; 
 }
 
-.section-purpose .long-copy {
+.section-monitor .long-copy {
     margin-top: 20px;
 }
 
-.section-purpose .long-copy:last-child{
+.section-monitor .long-copy:last-child{
     margin-bottom: 40px; 
 }
 
-.section-purpose img{
+.section-monitor img{
     width:80%;
     margin-left:10%;
 }
@@ -337,7 +337,7 @@ header {
 
 /* ------------------------- */
 
-.section-features {
+.section-intro {
     background-color: #F8F8F8;
 }
 
@@ -418,7 +418,7 @@ header {
     filter: brightness(1);
 }
 
-.city-feature {
+.bicover-feature {
     font-size: 80%;
     margin-top:10px;
     margin-bottom: 5px;
@@ -477,7 +477,7 @@ header {
     background-color: #F8F8F8;
 }
 
-.plan-box {
+.achieve-box {
     font-size:120%;
     /* background-color: #FFF; */
     border-radius: 5px;
@@ -487,13 +487,13 @@ header {
     /* box-shadow: 0 2px 2px #EFEFEF; */
 }
 
-.plan-box div {
+.achieve-box div {
     text-align: center;
     padding: 5px;
     border-bottom: 1px solid #E8E8E8;
 }
 
-.plan-box img{
+.achieve-box img{
     margin-top:5%;
 }
 
@@ -509,13 +509,13 @@ header {
     width:60%;
 }
 
-.plan-box div:last-child {
+.achieve-box div:last-child {
     background-color: #FDFDFD;
     text-align: center;
     border: none;
 }
 
-.plan-box div:first-child {
+.achieve-box div:first-child {
     background-color: #FCFCFC;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -537,7 +537,7 @@ header {
     font-size: 80%;
 }
 
-.plan-box ul {
+.achieve-box ul {
     list-style: none;
 }
 
@@ -691,13 +691,13 @@ footer p {
 .hust {
     float: left;
     margin-left: 5%;
-    width: 70%;
+    width: 50%;
 }
 
 .tpl {
     float: right;
     margin-right: 8%;
-    width: 60%;
+    width: 40%;
 }
 
 .back-box {
@@ -711,4 +711,31 @@ footer p {
     color: #FFF;
     border: 2px solid #FFF;
     padding: 5% 30%;
+}
+
+/* Lazy Load */
+
+.fade {
+    -webkit-animation-name: fade;
+            animation-name: fade;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
