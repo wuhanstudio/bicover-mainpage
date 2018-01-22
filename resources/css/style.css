@@ -167,8 +167,8 @@ a:hover, a:active {
 }
 
 .btn-ghost:link, .btn-ghost:visited {
-    border: 1px solid #4979ff;
-    color: #4979ff;
+    border: 1px solid #F4F4F4;
+    color: #FFF;
 }
 
 .btn:hover, .btn:active, input[type=submit]:hover, input[type=submit] :active {
