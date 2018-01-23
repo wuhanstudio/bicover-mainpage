@@ -434,23 +434,23 @@ header {
     background-color: #FDFDFD;
 }
 
-.meals-showcase {
+.team-showcase {
     list-style: none;
     width: 100%;
 }
 
-.meals-showcase li {
+.team-showcase li {
     display: block;
     width: 100%;
 }
 
-.meals-photos {
+.team-photos {
     width: 100%;
     margin: 0;
     overflow: hidden;
 }
 
-.meals-photos img {
+.team-photos img {
     border-radius: 8%;
     width: 60%;
     margin-left:20%;
@@ -462,7 +462,7 @@ header {
     transition: filter 0.5s, transform 0.5s;
 }
 
-.meals-photos img:hover {
+.team-photos img:hover {
     transform: scale(1.15);
     filter: brightness(1);
 }
@@ -690,14 +690,18 @@ footer p {
 
 .hust {
     float: left;
-    margin-left: 5%;
-    width: 50%;
+    width: 25%;
+    margin-top:1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
 }
 
 .tpl {
     float: right;
-    margin-right: 8%;
-    width: 40%;
+    width: 20%;
+    margin-right:1%;
+    margin-top:1%;
+    margin-bottom: 1%;
 }
 
 .back-box {
