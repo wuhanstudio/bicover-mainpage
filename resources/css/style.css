@@ -191,7 +191,8 @@ a:hover, a:active {
 /* ------------------------- */
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('../img/frontpage.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.6))), url('http://bicover-cc.oss-us-west-1.aliyuncs.com/frontpage.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('http://bicover-cc.oss-us-west-1.aliyuncs.com/frontpage.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -410,12 +411,15 @@ header {
 .box img {
     width: 100%;
     margin-bottom: 15px;
-    filter: brightness(0.7);
+    -webkit-filter: brightness(0.7);
+            filter: brightness(0.7);
+    -webkit-transition: 0.2s;
     transition: 0.2s;
 }
 
 .box img:hover{
-    filter: brightness(1);
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
 }
 
 .bicover-feature {
@@ -455,16 +459,23 @@ header {
     width: 60%;
     margin-left:20%;
     height: auto;
-    filter:brightness(0.7);
-    box-shadow: 0px 1px 20px rgba(0, 0, 0, .6);
+    -webkit-filter:brightness(0.7);
+            filter:brightness(0.7);
+    -webkit-box-shadow: 0px 1px 20px rgba(0, 0, 0, .6);
+            box-shadow: 0px 1px 20px rgba(0, 0, 0, .6);
     -webkit-transform: scale(1.15);
     transform: scale(1.05);
+    -webkit-transition: -webkit-filter 0.5s, -webkit-transform 0.5s;
+    transition: -webkit-filter 0.5s, -webkit-transform 0.5s;
     transition: filter 0.5s, transform 0.5s;
+    transition: filter 0.5s, transform 0.5s, -webkit-filter 0.5s, -webkit-transform 0.5s;
 }
 
 .team-photos img:hover {
-    transform: scale(1.15);
-    filter: brightness(1);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
 }
 
 /* ------------------------- */
@@ -653,7 +664,6 @@ footer p {
 .mfp-fade.mfp-bg {
 	opacity: 0;
 	-webkit-transition: all 0.15s ease-out; 
-	-moz-transition: all 0.15s ease-out; 
 	transition: all 0.15s ease-out;
 }
 .mfp-fade.mfp-bg.mfp-ready {
@@ -666,7 +676,6 @@ footer p {
 .mfp-fade.mfp-wrap .mfp-content {
 	opacity: 0;
 	-webkit-transition: all 0.15s ease-out; 
-	-moz-transition: all 0.15s ease-out; 
 	transition: all 0.15s ease-out;
 }
 .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
